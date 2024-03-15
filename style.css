@@ -1,21 +1,124 @@
-body{
-    background-color: hsl(30, 54%, 90%);
+@font-face {
+    font-family: Outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: young-serif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container img{
+    padding: 1.5rem;
+    border-radius: 10px;
 }
 .container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 17px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    align-content: center;
-    max-width: 35rem;
-    box-shadow: 2px 2px 20px hsla(0, 0%, 0%, 0.384);
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 18px;
 }
-.container .img{
-    display: flex;
-    justify-content: center;
+body {
+    background-color: hsl(30, 54%, 90%);
+    
     align-items: center;
+    min-height: 100vh;
+  }
+.container div:not(:first-child){
+    padding: 1.5rem;
+}
+h1, h2{
+    font-family: young-serif;
+}
+h2{
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem;
+
+}
+h1{
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 1rem;
+}
+img{
+    border-radius: 15px;
+}
+
+.banner p{
+    margin-bottom: 1rem;
+}
+p, li{
+    color: hsl(24, 5%, 18%);
+    font-family: Outfit;
+    line-height: 1.6rem;
+}
+h3{
+    color: hsl(332, 51%, 32%);
+    display: inline-block; 
+    vertical-align: top; 
+    margin-bottom: 12px;
+    font-family: Outfit;
+}
+ul{
+  margin: 0; 
+  padding-left: 20px; 
+}
+.banner article{
+    padding: 1.6rem;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 13px;
+}
+.banner article li{
+    margin-bottom: 8px;
+}
+li{
+    margin-bottom: 0.5rem;
+}
+.banner ul li::marker{
+    color: hsl(332, 51%, 32%);
+}
+ul li::marker{
+    color: hsl(14, 45%, 36%);
+}
+ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-family: Outfit;
+}
+p, h1, h2, h3, ul, li, ol{
+    letter-spacing: 0.3px;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+}
+.instructions{
+    border-top: 1px solid hsl(30, 18%, 87%);
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.nutrition p{
+    margin: 1rem;
+}
+.nutrition ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 0.5rem 0;
+}
+.nutrition ul li:last-child{
+    border-bottom: 0;
+}
+.nutrition article span{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
 }
